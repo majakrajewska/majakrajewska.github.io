@@ -1,0 +1,45 @@
+.mygrid {
+    display: grid;
+    margin: auto;
+
+    width: auto;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr;
+    grid-template-areas: "header header header header header header works about contact"
+                         "content1 content1 content1 content2 content2 content2 content3 content3 content3"
+                         
+                        
+}
+
+.mygrid:hover {
+    opacity: 0.2;
+     
+}
+
+.mygrid>* {
+    border: 1px dashed yellow;
+    
+}
+
+.header {
+    grid-area: header;  
+}
+
+.works {
+    grid-area: works;
+}
+
+.about {
+    grid-area: about;
+}
+
+.content1 {
+    grid-area: content1;
+}
+.content2 {
+    grid-area: content2;
+}
+.content3 {
+    grid-area: content3;
+}
