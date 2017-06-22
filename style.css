@@ -7,7 +7,7 @@
     
     
     grid-template-columns: 100px auto 100px;
-    grid-template-rows: auto 200px 200px 100px;
+    grid-template-rows: auto 200px auto 100px;
     grid-template-areas: "logo header header"
                         "about content contact"
                         "works content contact"
@@ -114,9 +114,17 @@ a:before {
     text-align: center;
     line-height: 0.2;
     text-decoration: none;
-    padding-top: 30px;
+    
     color: aqua;
     
+}
+
+.content a {
+    opacity: 0.2;
+    transition: opacity 0.1s ease-in;
+}
+.content a:hover {
+    opacity: 1;
 }
 a:hover:before {
   visibility: visible;
@@ -178,4 +186,38 @@ padding-left: 20px;
     float: left;
     padding-top: 90px;
 }
+
+
+.parkof-backgrounds {
+    background-image: url("okladka2.jpg");
+    background-size: auto;
+    
+    
+}
+.cityview-backgrounds {
+    background-image: url("ok%C5%82adka3-02.JPG");
+    background-size: 1650px auto;
+    
+    
+}
+.thecolorstudy-backgrounds {
+    background-image: url("behance%20posty-03.png");
+    background-size: 1450px auto;
+    opacity: 0.7;
+  
+    
+}
+.calendar-backgrounds {
+    background-image: url("ok%C5%82adka7.jpg");
+    background-size: 1650px auto;
+    
+    
+}
+.projectline-backgrounds {
+    background-image: url("ok%C5%82adka8-02.jpg");
+    background-size: 1650px auto;
+    
+    
+}
+
 
